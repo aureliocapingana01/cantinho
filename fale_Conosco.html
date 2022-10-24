@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io (2)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="script/script.js"></script>
+    
+    <title>Fale conosco</title>
+
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="imagens/logo-cantinho.jpg" alt="logo do cantinho da Beleza"></a>
+            </div>
+            
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+
+                    <ul>
+                        <li class="ative"><a href="index.html">Home</a></li>
+                         <li><a href="fale_Conosco.html">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <div id="corpo">
+            <div id="h2">
+                <h2>Marque um horario</h2>
+                <div id="decor"></div>
+            </div>
+            <form action="mailto:aurelio.capingana01@gmail.com?Subject=Título%20da%20mensagem" method="POST" id="contato" name="tcontato" >
+                <fieldset id="usuario">
+                    <legend>Identificação do Cliente</legend>
+                     <p><label for="cnome">Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="20" minlength="2" placeholder="Digite o nome completo" required></label> </p>
+                     <p><label for="ctel">Telefone <input type="tel" name="tel" id="ctel" minlength="9" maxlength="12" required placeholder=" Seu ceular com"></label></p>
+                     <p><label for="email">E-mail: <input type="email" name="temail" id="cemail" size="40" maxlength="40" required></label> </p>
+                     <fieldset id="sexo">
+                         <legend>Sexo</legend>
+                         <p><label for=""><input type="radio" name="tsex" id="tsex" checked>Feminino</input></label></p>
+                        </fieldset>
+                           <p>Data de Nascimento: <input type="date"> </p>
+                     </fieldset>
+            
+                     <fieldset id="endereco">
+                        <legend>Endereço do Cliente</legend>
+                           <p><label for="cidade">Cidade: </label>
+                            <select name="tcidade" id="cidade">
+                                <option value="RS">Caxias do Sul</option>
+                            </select>
+                        </p>
+                     <p><label for="cesta"  >Rua</label>
+                        <select name="testa" id="cesta" required>
+                            <optgroup label="Região Central">
+                                <option value="AF">Amabile Fontana</option>
+                                <option value="JS">José Bressan</option>
+                                <option value="AJ">Almeida junior</option>
+                            </optgroup>
+                            <optgroup label="Região Sudoeste">
+                                <option value="OR">Orion</option>
+                                <option value="CF">Café Filho</option>
+                                <option value="EG">Eduardo Guerra</option>
+                            </optgroup>
+                            <optgroup label="Região Oeste">
+                                <option value="AF">Amabil</option>
+                                <option value="AF">Amabile Fontana</option>
+                                <option value="AF">Amabile Fontana</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                                <option value="MCO" selected>Marieli Cardoso de Oliveira</option>
+                                <option value="BV">Boa Vista</option>
+                                <option value="CZ">Cruzeiro</option>
+                            </optgroup>
+                        </select>
+            
+                    </p>
+                   
+                     <p>Número: <input type="number" name="tnum" id="cnum" min="0" max="99999" required> </p>
+                 </fieldset>
+                 <fieldset id="mensagem">
+                     <legend>Mensagem do Usuário</legend>
+                      <p><label for="urgen">Grau de Urgência: MIN <input type="range" step="2" name="turgen" id="urgen"> MAX</label></p>
+                     <p><label for="cmens">Mensagem:</label>
+                        <textarea name="tmens" id="cmens" cols="30" rows="10" placeholder="Deixa aqui uma Mensagem..."></textarea>
+                    </p>
+                 </fieldset>
+            
+                 <fieldset id="pedido">
+                     <legend>Quero um horario</legend>
+                     <p><label for="cmarcar">Gostaria de marcar um horario:<input type="checkbox" name="tmarcar" id="cmarcar" required> </label></p>
+                     <p><label for="chora">Hora:<input type="datetime-local" name="thora" id="chora" required> </label></p>
+                    </fieldset>
+            
+                    <input type="image" name="tenviar" id="cenviar" src="imagens/botao-enviar.png">
+            </form>
+        </div>
+
+    <footer>
+        <div class="container flexcolumn">
+            <div class="footer_menu">
+
+                <!-- <div class="fm_1">   
+                  <h3>Agora</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eius. At minus accusamus illo autem quaerat corrupti culpa similique corporis deserunt possimus! Harum, ipsam quo. Magnam sint a quo vitae!</p>
+                </div>
+                <div class="fm_2">
+                    <h3>Agora</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eius. At minus accusamus illo autem quaerat corrupti culpa similique corporis deserunt possimus! Harum, ipsam quo. Magnam sint a quo vitae!</p>
+                </div>
+                <div class="fm_3">
+                    <h3>Agora</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eius. At minus accusamus illo autem quaerat corrupti culpa similique corporis deserunt possimus! Harum, ipsam quo. Magnam sint a quo vitae!</p> 
+                </div> -->
+
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+
+                        <div class="widget_title">
+                            <div class="widget_title_text">Redes-Socias</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+     
+                        <div class="widget_body">
+                           
+                            <!-- <a href="https://api.whatsapp.com/send?phone=+555491052835" target="_blank"><img class="icone" src="imagens/whatsapp.png" alt="icone_whatsapp">Whatsapp</a> -->
+
+                            <!-- <a href="https://github.com/Aurelio-Capingana/" target="_blank"><img class="icone" src="imagens/icone-github.png" alt="icone_github">Github</a> -->
+
+                            <!-- <a href="https://www.linkedin.com/in/aur%C3%A9lio-capingana-6777691b6/" target="_blank"><img class="icone" src="imagens/icone-linkedin.png" alt="icone_linkedin">Linkedin</a> -->
+
+                            <!-- <a href="https://www.facebook.com/aureliocapingano.manguena" target="_blank"><img class="icone" src="imagens/icone-facebook.png" alt="icone_facebook">Facebook</a> -->
+
+                            <!-- <a href="https://www.instagram.com/aurelio_capingana/" target="_blank"><img class="icone" src="imagens/instagram.png" alt="icone_instagram">Instagram</a> -->
+
+                            <a href="#" target="_blank"><img class="icone" src="imagens/instagram.png" alt="icone_instagram">Instagram</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_areaitem">
+                    <div class="widget">
+
+                        <div class="widget_title">
+                            <div class="widget_title_text">Localização</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+     
+                        <div class="widget_body lugar">
+                            Caxias do Sul - RS <br>
+                            Rua Marieli Cardoso de Oliveira - 161 | apt 253<br>
+                            Bairro São luiz <br>
+                            Cep:95072-704 <br>
+                            Loteamento Campo da Serra <br>
+                            Ponto dereferência: UBS campo da serra
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_areaitem">
+                    <div class="widget">
+
+                        <div class="widget_title">
+                            <div class="widget_title_text">Saiba Mais</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+     
+                        <div class="widget_body lugar">
+                            Nosso diferencial é o amor que move o luga <br>
+                            Pois como o brilo da manhã <br>
+                            tão belo é uma Mulher linda <br>
+                            Alegria do Cantinho da Beleza <br>
+                            Sorriso da Patrícia...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                
+                <p>
+                    Copyright - 2022 | Todos os direito reservados | &copy; Open Time - Site Criado por: <a href="https://github.com/Aurelio-Capingana/" target="_blank">Aurélio Capingana </a>
+                </p>
+                
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
