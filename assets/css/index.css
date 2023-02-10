@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
 
 :root{
-    --cor1:#F4CDA5;
+    --cor1:#F4CD;
     --cor2:#ED5276;
     --cor3:#721824;
 
@@ -25,9 +25,10 @@ body{
     margin: auto;
 }
 .bar {
+    width: 80px;
+    height: 5px;
     background-color: var(--cor2);
-    width: 168px;
-    height: 22px;
+    margin-top: 10px;
 }
 h1 {
     font-size: 90px;
@@ -53,7 +54,8 @@ h2 {
 }
 .button:hover {
     color: #fff;
-    background-color: #454545;
+    /* background-color: #454545; */
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
 }
 
 /* Começo do cabecalho*/
@@ -75,28 +77,6 @@ header .line {
     display: flex;
     align-items: center;
 }
-/*
-.search form {
-    display: flex;
-}
-.search input {
-    width: 100%;
-    max-width: 220px;
-    font-size: 16px;
-    padding: 7px 10px;
-    border: 1px solid #999999;
-    outline: 0;
-}
-.search button {
-    border: 0;
-    background: transparent;
-    margin-left: -30px;
-    cursor: pointer;
-}
-.search button img {
-    width: 16px;
-    height: 16px;
-}*/
 .menu {
     margin-left: 50px;
     cursor: pointer;
@@ -106,7 +86,6 @@ header .line {
     height: 24px;
     cursor: pointer;
 }
-
 .menu--menu{
     display: flex;
     align-items: center;
@@ -130,7 +109,6 @@ header .line {
 .menu--menu a:hover {
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color:#fff;
-    /* text-decoration: underline; */
 }
 
 /*  Criando o banner principal */
@@ -152,8 +130,8 @@ header .line {
     margin-right: 35px;
 }
 
-/* Criando as areas parte 1*/
 
+/* Criando as areas parte 1*/
 .area1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -182,8 +160,6 @@ header .line {
     background-position: left;
     display: none;
 }
-
-
 .area2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,7 +185,6 @@ header .line {
     background-size: cover;
     background-position: center;
 }
-
 .area3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -229,7 +204,6 @@ header .line {
     background-size: cover;
     background-position: center top;
 }
-
 .area4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -256,48 +230,54 @@ header .line {
     background-position: center;
 }
 
-/* .area4{
-    display: grid;
-    grid-template-columns: 450px 1fr;
-    background-color: #e8e9ee;
-}
-.area4--content {
-    padding: 125px 80px;
-}
-.area4--text {
-    margin-bottom: 50px;
-    line-height: 25px;
-}
-.area4--img1 {
-    background-image:  url('../imagens/IMG-20230128-WA0011.jpg');
-    background-position: left;
-} */
-
 /* Criando o rodape*/
-.area5 {
-    height: 600px;
-    background-image:  url('../imagens/IMG-20230128-WA0013.jpg');
-    background-size: cover;
-    background-position: center;
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-/* footer {
-    background-color: #333;
-    color: #fff;
-    padding: 80px;
-    text-align: center;
+.widget_title_text{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* .widget_title_bar{
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor3);
+    margin-top: 10px;
 } */
 
+/* .footer_area{
+    display: flex;
+} */
+
+footer{
+    /* background-color: #1e1e1e; */
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: center;
+}
+.footer_area{
+    display: flex;
+}
+.footer_areaitem{
+    flex: 1;
+    color: #fff;
+}
+.flexcolumn{
+   flex-direction: column; 
+}
 footer .widget_title_text{
     color: #fff;
 }
-.footer_copy{
+.footer_copy,
+.footer_copy a{
     border-top: 1px solid #2c2c2c;
     height: 40px;
-    /* line-height: 40; */
     color: #5c5c5c;
     font-size: 12px;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
 }
 footer .widget_body .icone{
     /* background-color: #fff; */
@@ -313,52 +293,6 @@ footer a{
     text-decoration: none;
     font-size: 12px;
 }
-footer a:hover{
-    text-decoration: underline;
-
-}
-footer a::after{
-    content: '\1F517\00A0';
-}
-footer .lugar{
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    line-height: 20px;
-}footer .widget_title_text{
-    color: #fff;
-}
-.footer_copy{
-    border-top: 1px solid #2c2c2c;
-    height: 40px;
-    /* line-height: 40; */
-    color: #5c5c5c;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 20px;
-}
-footer .widget_body .icone{
-    /* background-color: #fff; */
-    padding: 2px;
-    margin-right: 10px;
-}
-footer .widget_body{
-    display: flex;
-    flex-direction: column; 
-}
-footer a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-}
-footer a:hover{
-    text-decoration: underline;
-
-}
-footer a::after{
-    content: '\1F517\00A0';
-}
 footer .lugar{
     font-size: 12px;
     display: flex;
@@ -366,6 +300,36 @@ footer .lugar{
     word-wrap: break-word;
     line-height: 20px;
 }
+.footer--container{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px; 
+}
+/* footer a:hover{
+    text-decoration: underline;
+
+} */
+/* footer a::after{
+    content: '\1F517\00A0';
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*respoaividade para computadores*/
 @media (min-width: 769px) and (max-width: 1140px) {
