@@ -322,11 +322,10 @@ footer .lugar{
 
 
 
-.menuMobile{
+/* .menuMobile{
     display: none;
     width: 40px;
     height: 40px;
-    /* background-color: var(--cor3); */
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 20px;
@@ -334,7 +333,90 @@ footer .lugar{
 .mm_line{
     height: 3px;
     background-color: var(--cor1);
-}
+} */
+
+
+/*Responsicidade para celular*/
+
+/* @media (min-width: 370px) and (max-width: 450px) {
+    .banner{
+        padding: 20px;
+    }
+    .banner1,
+    .banner2,
+    .banner3 {
+        border-bottom: 2px solid var(--cor3);
+    }
+    .texto h1{
+        font-size: 50px;
+        line-height: 45px;
+    } 
+    .texto h2{
+        font-size: 25px;
+        line-height: 30px;
+        padding: 20px;  
+    }
+    .img{
+        margin: auto;
+    }
+    .opcao{
+        height: auto;
+        flex-direction: column;
+    } 
+    .container{
+        flex-direction: column;
+        width: 100vw;
+    }
+    #geral section, 
+    #geral aside{
+        font-size: 14px;
+        padding: 20px; 
+    }
+    #geral section{
+        margin-top: 120px;
+        
+    }
+    .footer_menu{
+        flex-direction: column;
+        padding: 20px;
+        font-size: 14px;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+        font-size: 14px;
+    }
+    .footer_copy{
+        padding: 20px;
+        text-align: center;
+        font-size: 10px;
+    }
+    header .container{
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+} */
+
+/* nav ul{
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor1);
+} */
+/* header{
+    height: auto;
+} */
+/* .logo{
+    padding-left: 20px;
+} */
+/* .menuMobile{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+} */
 
 @media(max-width:650px){
     .banner{
@@ -384,7 +466,7 @@ footer .lugar{
     }
     nav ul{
         flex-direction: column;
-        display: none;
+        /* display: none; */
         position: absolute;
         left: 0;
         width: 100%;
@@ -396,9 +478,9 @@ footer .lugar{
     .logo{
         padding-left: 20px;
     }
-    .menuMobile{
+    /* .menuMobile{
         display: flex; 
         flex-direction: column; 
         justify-content: space-around;
-    }
+    } */
 }
