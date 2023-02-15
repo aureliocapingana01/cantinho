@@ -101,7 +101,7 @@ header .line {
 }
 .menu--menu nav a{
     display: block;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
@@ -333,10 +333,13 @@ footer .lugar{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .menu {
+    menu {
         margin-left: 10px;
         /* cursor: pointer; */
     }
+    /* .header--logo {
+        margin-left: 20px;
+    } */
     /* .search input {
         max-width: 80px;
 
@@ -374,7 +377,7 @@ footer .lugar{
     .area2--content,
     .area3--content,
     .area4--content {
-        padding: 40pxpx;
+        padding: 40px;
     }
     /* .area5{
         display: none;
