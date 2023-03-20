@@ -144,7 +144,7 @@ header .line {
 }
 .area1--text {
     margin-bottom: 30px;
-    line-height: 15px;
+    line-height: 25px;
     /* text-align: justify; */
 }
 .area1--img1 {
@@ -170,12 +170,12 @@ header .line {
 }
 .area2--text {
     margin-bottom: 30px;
-    line-height: 15px;
+    line-height: 25px;
     /* text-align: justify; */
 }
 .area2--img1 {
     height: 450px;
-    background-image:  url('../imagens/text-banhp.jpg');
+    background-image:  url('../imagens/banho-de-lua.webp');
     background-size: cover;
     background-position: center;
     display: none;
@@ -221,11 +221,11 @@ header .line {
 }
 .area4--text {
     margin-bottom: 30px;
-    line-height: 15px;
+    line-height: 25px;
 }
-/* .area4--img1 {
+/* .area4--img2 {
     height: 450px;
-    background-image:  url('../imagens/plastica\ pe2.jpeg');
+    background-image:  url('../imagens/plastica-nos-pes.jpg');
     background-size: cover;
     background-position: center;
     display: none;
