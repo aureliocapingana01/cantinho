@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
 
 :root{
-    --cor1:#F4CD;
-    --cor2:#ED5276;
-    --cor3:#721824;
+    --cor1:#F2E641;
+    --cor2:#D9B341;
+    --cor3:#0D0D0C;
 
     --fonte-principal:'Open Sans', sans-serif;
     --fonte-secundaria: 'Oswald', sans-serif;
@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: var(--fonte-principal);
@@ -37,6 +38,10 @@ h1 {
     line-height: 95px;
     margin-bottom: 35px;
 }
+.banner > .container span {
+    font-size: 20px;
+    color: var(--cor2);
+}
 h2 {
     font-size: 36px;
     font-weight: bold;
@@ -47,20 +52,22 @@ h2 {
 .button {
     display: inline-block;
     padding: 10px 30px;
-    border: 2px solid #454545;
-    border-radius: 3px;
+    border: 2px solid transparent;
+    border-radius: 10px;
     color: #454545;
     text-decoration: none;
+    outline: none;
+    
 }
 .button:hover {
     color: #fff;
-    /* background-color: #454545; */
-    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+    background-color: var(--cor2);
+    /* background-image: linear-gradient(to right, var(--cor2), var(--cor3)); */
 }
 
 /* Começo do cabecalho*/
 header .line {
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     height: 10px;
 }
 .header--area {
@@ -107,8 +114,10 @@ header .line {
     color: #000;
 }
 .menu--menu a:hover {
-    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
-    color:#fff;
+    /* background-image: linear-gradient(to right, var(--cor2), var(--cor3)); */
+    color: #fff;
+    background-color: var(--cor2);
+    border-radius: 10px;
 }
 
 /*  Criando o banner principal */
@@ -281,7 +290,7 @@ footer .widget_title_text{
 }
 .footer_copy,
 .footer_copy a{
-    border-top: 1px solid #2c2c2c;
+    /* border-top: 1px solid #2c2c2c; */
     height: 40px;
     color: #5c5c5c;
     font-size: 12px;
@@ -392,7 +401,6 @@ footer .lugar{
         padding: 20px;
         font-size: 14px;
     }
-    /*   */
     .footer_copy{
         padding: 20px;
         text-align: center;
