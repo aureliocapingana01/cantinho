@@ -233,6 +233,7 @@ nav a:hover {
 }
 .nova_thumb img {
     width: 100%;
+    margin: auto;
 }
 #geral aside{
     flex: 1;
