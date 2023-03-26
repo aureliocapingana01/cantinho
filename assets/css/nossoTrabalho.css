@@ -105,12 +105,13 @@ nav a{
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    /* color: #000; */
+    color: var(--cor2);
 }
 nav a:hover {
     /* background-image: linear-gradient(to right, var(--cor2), var(--cor3)); */
     background-color: var(--cor2);
-    color:#fff;
+    color:#000;
     border-radius: 10px;
 }
 /* #banner{
@@ -230,6 +231,9 @@ nav a:hover {
     /* text-indent: 50px; */
     text-align: justify;
 }
+.nova_thumb img {
+    width: 100%;
+}
 #geral aside{
     flex: 1;
 }
@@ -302,18 +306,22 @@ footer .widget_title_text{
 }
 .footer_copy,
 .footer_copy a{
-    /* border-top: 1px solid #2c2c2c; */
-    height: 40px;
-    color: #5c5c5c;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 20px;
+   /* border-top: 1px solid #2c2c2c; */
+   height: auto;
+   /* width: auto; */
+   color: #5c5c5c;
+   font-size: 12px;
+   margin-top: 20px;
+   margin-bottom: 5px;
+   padding: 10px;
 }
-footer .widget_body .icone{
-    /* background-color: #fff; */
+.widget_body a {
+    margin-bottom: 15px
+}
+/* footer .widget_body .icone{
     padding: 2px;
     margin-right: 10px;
-}
+} */
 footer .widget_body{
     display: flex;
     flex-direction: column; 
@@ -524,7 +532,7 @@ footer .lugar{
 
 
 
-@media(min-width: 501px) and (max-width: 725px){
+@media(min-width: 501px) and (max-width: 725px) {
     .banner{
         padding: 20px;
     }
@@ -533,11 +541,11 @@ footer .lugar{
     .banner3 {
         border-bottom: 2px solid var(--cor3);
     }
-    .texto h1{
+    .texto h1 {
         font-size: 22px;
         padding: 20px;
     } 
-    .texto h2{
+    .texto h2 {
         font-size: 15px;
         padding: 20px;
     } 
@@ -546,7 +554,7 @@ footer .lugar{
         flex-direction: column;
         margin-bottom: -150px;
     }  */
-    .container{
+    .container {
         flex-direction: column;
         width: 100vw;
     }

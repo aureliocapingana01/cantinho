@@ -39,8 +39,9 @@ h1 {
     margin-bottom: 35px;
 }
 .banner > .container span {
-    font-size: 20px;
-    color: var(--cor2);
+    font-size: 19px;
+    font-weight: bolder;
+    color: var(--cor3);
 }
 h2 {
     font-size: 36px;
@@ -56,8 +57,7 @@ h2 {
     border-radius: 10px;
     color: #454545;
     text-decoration: none;
-    outline: none;
-    
+    outline: none;   
 }
 .button:hover {
     color: #fff;
@@ -111,18 +111,18 @@ header .line {
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: var(--cor2);
 }
 .menu--menu a:hover {
     /* background-image: linear-gradient(to right, var(--cor2), var(--cor3)); */
-    color: #fff;
+    color: #000;
     background-color: var(--cor2);
     border-radius: 10px;
 }
 
 /*  Criando o banner principal */
 .banner {
-    background-image: url('../imagens/IMG-20230128-WA0012.jpg');
+    background-image: url('../imagens/ESFOLIACAO1.jpg');
     background-position: center;
     background-size: cover;
     padding-top: 90px;
@@ -249,11 +249,11 @@ header .line {
 
 
 /* Criando o rodape*/
-.widget_title{
+.widget_title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.widget_title_text{
+.widget_title_text {
     color: #000;
     font-size: 22px;
     font-weight: bold;
@@ -269,38 +269,42 @@ header .line {
     display: flex;
 } */
 
-footer{
+footer {
     /* background-color: #1e1e1e; */
     background-color: var(--cor3);
     display: flex;
     justify-content: center;
 }
-.footer_area{
+.footer_area {
     display: flex;
 }
-.footer_areaitem{
+.footer_areaitem {
     flex: 1;
     color: #fff;
 }
-.flexcolumn{
+.flexcolumn {
    flex-direction: column; 
 }
-footer .widget_title_text{
+footer .widget_title_text {
     color: #fff;
 }
 .footer_copy,
-.footer_copy a{
+.footer_copy a {
     /* border-top: 1px solid #2c2c2c; */
-    height: 40px;
+    height: auto;
+    /* width: auto; */
     color: #5c5c5c;
     font-size: 12px;
     margin-top: 20px;
+    margin-bottom: 5px;
     padding: 10px;
 }
-footer .widget_body .icone{
-    /* background-color: #fff; */
+/* footer > .widget_body > .icone {
     padding: 2px;
     margin-right: 10px;
+} */
+.widget_body a {
+    margin-bottom: 15px
 }
 footer .widget_body{
     display: flex;
@@ -396,7 +400,7 @@ footer .lugar{
         padding: 40px 20px;
     } */
     .footer_menu,
-    .footer_area{
+    .footer_area {
         flex-direction: column;
         padding: 20px;
         font-size: 14px;
@@ -406,6 +410,7 @@ footer .lugar{
         text-align: center;
         font-size: 10px;
     }
+
 }
 
 
