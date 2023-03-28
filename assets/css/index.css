@@ -77,8 +77,8 @@ header .line {
     height: 100px;
 }
 .header--logo img {
-    width: 64px;
-    height: 64px;
+    width: 74px;
+    height: 74px;
 }
 .header--menu {
     display: flex;
